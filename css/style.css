@@ -1,0 +1,154 @@
+/* @font-face {
+    font-family: Futura;
+    src: url(fonts/FuturaBookC.ttf);
+    font-weight: 400;
+} */
+@font-face {
+    font-family: Futura;
+    src: url(../fonts/FuturaMediumC.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Futura;
+    src: url(../fonts/FuturaDemiC.ttf);
+    font-weight: 700;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+section {
+    width: 100%;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.10);
+    padding: 50px;
+}
+
+section>section {
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0;
+}
+
+
+/* HEADER */
+.header {
+    background: #FFF;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.10);
+    padding: 30px 40px;
+}
+
+.header .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    gap: 18px;
+    margin: 0;
+}
+
+.header__menu li a {
+    color: #000;
+    font-family: Futura;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.header__menu li {
+    display: flex;
+    align-items: center;
+}
+
+.header__menu ul li.list::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 6px;
+    background-image: url(../img/icons/triangle.svg);
+    background-repeat: no-repeat;
+}
+
+.header__btns {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+
+.header__btn {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.header__btn_track {
+    border-radius: 15px;
+    background: #E6075E;
+    color: #FFF;
+    font-family: Futura;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    padding: 7px 11px;
+    gap: 5px;
+}
+
+.header__btn_cart {
+    position: relative;
+}
+
+.header__btn_cart span {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 33px;
+    left: 19px;
+    color: #FFF;
+    font-family: Futura;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 10;
+    background: #E6075E;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+}
+
+
+
+.main {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section_text {
+    box-shadow: none;
+    border-radius: 0;
+    background: none;
+}
