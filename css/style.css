@@ -357,27 +357,67 @@ section.search p {
     grid-template-columns: 2fr 6fr 1fr 1fr;
 }
 
-/* .table__col_header:first-of-type {
-    padding-left: 50px;
-} */
-
 .table__col img {
     width: 120px;
     height: 120px;
 }
+
 .table__col {
     display: flex;
     align-items: center;
     margin-top: 10px;
     padding-left: 10px;
 }
+
 .item__img {
     padding-left: 50px;
 }
+
 .table__col_header {
     background: #F6F6F6;
     padding: 14px 0 13px 10px;
     margin: 0 0 20px;
+}
+
+.item__count,
+.item__price {
+    text-align: right;
+}
+
+.item__price,
+.table__info {
+    margin-right: 50px;
+}
+
+.table__info_line {
+    width: 100%;
+    height: 1px;
+    background: #bcbcbc;
+    margin-bottom: 20px;
+}
+
+.table__info {
+    grid-column: 2/5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+.table__info > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.table__info .bold {
+    color: #000;
+    text-align: right;
+    font-weight: 700;
+}
+.table__info .total {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 20px;
 }
 
 
