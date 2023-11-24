@@ -290,52 +290,74 @@ section.search p {
 }
 
 .status__line {
-    position: absolute;
-    height: 2px;
-    background: #bcbcbc;
-    width: calc(100%);
-    transform: translate(-50%, -50%);
-    top: 86px;
-    left: 50%;
-    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 22px;
 }
 
-.status__line_active {
-    background: #ED2974;
+.status__line>div {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.status__line .line {
+    background: #bcbcbc;
+    flex-grow: 1;
+    width: 100%;
     height: 2px;
     z-index: 6;
+}
+
+.status__line>div.active .line {
+    background: #ED2974;
 }
 
 .status__points {
     display: flex;
     justify-content: space-between;
+    padding: 0 6px;
+}
+.status__points div:nth-child(2) {
+    transform: translateX(40%);
+}
+.status__points div:nth-child(3) {
+    transform: translateX(80%);
+}
+.status__points div:nth-child(4) {
+    transform: translateX(26%);
+}
+.status__points div:nth-child(5) {
+    transform: translateX(15%);
 }
 
-.status__point {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    z-index: 7;
-}
-
-.status__point span {
+.status__line span {
     display: block;
     width: 30px;
     height: 30px;
-    flex-shrink: 0;
-    background: #ED2974;
+    background: #bcbcbc;
     border-radius: 50%;
     margin: 11px 0 9px;
+    aspect-ratio: 1;
+}
+
+.status__line>div.active span,
+.status__line span:nth-child(1) {
+    background: #ED2974;
 }
 
 .status__title {
-    color: #ED2974;
+    color: #bcbcbc;
     font-family: Futura;
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+.status__title_active {
+    color: #ED2974;
 }
 
 .order__details {
@@ -403,7 +425,7 @@ section.search p {
     gap: 10px;
 }
 
-.table__info > div {
+.table__info>div {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -414,6 +436,7 @@ section.search p {
     text-align: right;
     font-weight: 700;
 }
+
 .table__info .total {
     font-size: 22px;
     font-weight: 700;

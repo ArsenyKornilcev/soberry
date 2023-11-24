@@ -84,37 +84,44 @@
                     <h3>Статус заказа</h3>
 
                     <div class="status__bar">
+                        <div class="status__points">
+                            <img src="img/icons/points/submit.png" alt="">
+                            <img src="img/icons/points/order.png" alt="">
+                            <img src="img/icons/points/package.png" alt="">
+                            <img src="img/icons/points/delivery.png" alt="">
+                            <img src="img/icons/points/house.png" alt="">
+                        </div>
+
                         <div class="status__line">
-                            <div class="status__line_active" style="width: 50%;">
+                            <span></span>
+                            <div class="active">
+                                <div class="line">
+                                </div>
+                                <span></span>
+                            </div>
+                            <div class="active">
+                                <div class="line">
+                                </div>
+                                <span></span>
+                            </div>
+                            <div>
+                                <div class="line">
+                                </div>
+                                <span></span>
+                            </div>
+                            <div>
+                                <div class="line">
+                                </div>
+                                <span></span>
                             </div>
                         </div>
 
                         <div class="status__points">
-                            <div class="status__point">
-                                <img src="img/icons/points/submit.png" alt="">
-                                <span></span>
-                                <div class="status__title">Новый</div>
-                            </div>
-                            <div class="status__point">
-                                <img src="img/icons/points/order.png" alt="">
-                                <span></span>
-                                <div class="status__title">Оплачен</div>
-                            </div>
-                            <div class="status__point">
-                                <img src="img/icons/points/package.png" alt="">
-                                <span></span>
-                                <div class="status__title">Собран</div>
-                            </div>
-                            <div class="status__point">
-                                <img src="img/icons/points/delivery.png" alt="">
-                                <span></span>
-                                <div class="status__title">Передан курьеру</div>
-                            </div>
-                            <div class="status__point">
-                                <img src="img/icons/points/house.png" alt="">
-                                <span></span>
-                                <div class="status__title">Доставлен</div>
-                            </div>
+                            <div class="status__title status__title_active">Новый</div>
+                            <div class="status__title status__title_active">Оплачен</div>
+                            <div class="status__title status__title_active">Собран</div>
+                            <div class="status__title">Передан курьеру</div>
+                            <div class="status__title">Доставлен</div>
                         </div>
                     </div>
                 </section>
@@ -174,7 +181,8 @@
                             </div>
                             <div>
                                 <span>Доставка:</span>
-                                <span class="bold">99 р.</span></div>
+                                <span class="bold">99 р.</span>
+                            </div>
                             <div>
                                 <span>Скидка:</span>
                                 <span class="bold">0 р.</span>
@@ -185,32 +193,30 @@
                             </div>
                         </div>
                     </div>
-        </div>
-        </div>
-        </section>
-        </section>
+                </section>
+            </section>
 
-        <section class="info">
-            <h3>Данные заказа:</h3>
+            <section class="info">
+                <h3>Данные заказа:</h3>
 
-            <div class="info__list">
-                <div class="info__list-item">
-                    <span class="bold">Имя:</span><span>name</span>
+                <div class="info__list">
+                    <div class="info__list-item">
+                        <span class="bold">Имя:</span><span>name</span>
+                    </div>
+                    <div class="info__list-item">
+                        <span class="bold">Email:</span><span>email</span>
+                    </div>
+                    <div class="info__list-item">
+                        <span class="bold">Номер телефона:</span><span>phone</span>
+                    </div>
+                    <div class="info__list-item">
+                        <span class="bold">Адрес доставки:</span><span>address</span>
+                    </div>
+                    <div class="info__list-item">
+                        <span class="bold">Временной диапазон: </span><span>time</span>
+                    </div>
                 </div>
-                <div class="info__list-item">
-                    <span class="bold">Email:</span><span>email</span>
-                </div>
-                <div class="info__list-item">
-                    <span class="bold">Номер телефона:</span><span>phone</span>
-                </div>
-                <div class="info__list-item">
-                    <span class="bold">Адрес доставки:</span><span>address</span>
-                </div>
-                <div class="info__list-item">
-                    <span class="bold">Временной диапазон: </span><span>time</span>
-                </div>
-            </div>
-        </section>
+            </section>
         </div>
     </main>
 </body>
