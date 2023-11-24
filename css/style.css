@@ -299,6 +299,7 @@ section.search p {
     left: 50%;
     z-index: 5;
 }
+
 .status__line_active {
     background: #ED2974;
     height: 2px;
@@ -340,8 +341,43 @@ section.search p {
 .order__details {
     padding: 50px 0;
 }
+
 .order__details h3 {
     padding-left: 50px;
+}
+
+.details__table {
+    color: #000;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: grid;
+    grid-template-columns: 2fr 6fr 1fr 1fr;
+}
+
+/* .table__col_header:first-of-type {
+    padding-left: 50px;
+} */
+
+.table__col img {
+    width: 120px;
+    height: 120px;
+}
+.table__col {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+.item__img {
+    padding-left: 50px;
+}
+.table__col_header {
+    background: #F6F6F6;
+    padding: 14px 0 13px 10px;
+    margin: 0 0 20px;
 }
 
 
