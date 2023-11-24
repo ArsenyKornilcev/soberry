@@ -151,4 +151,95 @@ section>section {
     box-shadow: none;
     border-radius: 0;
     background: none;
+    padding: 0;
+}
+
+
+section.title h1 {
+    color: #000;
+    font-family: Futura;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+section.title p {
+    color: #000;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+section.title {
+    padding-bottom: 40px;
+}
+
+
+section.search {
+    background: #ED2974;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+section.search p {
+    color: #FFF;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.search__form {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    flex-grow: 1;
+}
+
+.search__form input {
+    border-radius: 15px;
+    background: #FFF;
+    padding: 14px 14px 15px 57px;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    flex-grow: 1;
+    outline: none;
+}
+
+.search__form input::placeholder {
+    color: #BCBCBC;
+    font-family: Arial;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.search__form img {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 26px;
+    top: 50%;
+}
+
+.search__form button {
+    width: 200px;
+    padding: 14px 0 15px;
+    text-align: center;
+    border-radius: 15px;
+    background: #6F58A1;
+    border: none;
+    color: #FFF;
+    font-family: Arial;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
