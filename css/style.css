@@ -1,8 +1,8 @@
-/* @font-face {
+@font-face {
     font-family: Futura;
     src: url(fonts/FuturaBookC.ttf);
     font-weight: 400;
-} */
+}
 @font-face {
     font-family: Futura;
     src: url(../fonts/FuturaMediumC.ttf);
@@ -41,6 +41,9 @@ section>section {
 .container {
     max-width: 1200px;
     padding: 0;
+}
+.main{
+    padding: 0 40px;
 }
 
 
@@ -404,6 +407,7 @@ section.search p {
 .item__count,
 .item__price {
     text-align: right;
+    width: max-content;
 }
 
 .item__price,
