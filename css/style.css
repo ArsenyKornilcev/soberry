@@ -3,6 +3,7 @@
     src: url(fonts/FuturaBookC.ttf);
     font-weight: 400;
 }
+
 @font-face {
     font-family: Futura;
     src: url(../fonts/FuturaMediumC.ttf);
@@ -42,7 +43,8 @@ section>section {
     max-width: 1200px;
     padding: 0;
 }
-.main{
+
+.main {
     padding: 0 40px;
 }
 
@@ -52,6 +54,22 @@ section>section {
     background: #FFF;
     box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.10);
     padding: 30px 40px;
+}
+
+.header .hamburger {
+    display: none;
+    flex-flow: column nowrap;
+    justify-content: center;
+    gap: 15px;
+    width: 60px;
+}
+
+.header .hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    border-radius: 50%;
+    background: #000;
 }
 
 .header .container {
@@ -163,6 +181,7 @@ section.title h1 {
     font-family: Futura;
     font-size: 42px;
     font-weight: 500;
+    margin-bottom: 20px;
 }
 
 section.title p {
@@ -322,15 +341,19 @@ section.search p {
     justify-content: space-between;
     padding: 0 6px;
 }
+
 .status__points div:nth-child(2) {
     transform: translateX(40%);
 }
+
 .status__points div:nth-child(3) {
     transform: translateX(80%);
 }
+
 .status__points div:nth-child(4) {
     transform: translateX(26%);
 }
+
 .status__points div:nth-child(5) {
     transform: translateX(15%);
 }
@@ -478,4 +501,16 @@ section.search p {
 
 .info h3 {
     margin-bottom: 20px;
+}
+
+@media (max-width: 1190px) {
+    .header__menu ul a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header .hamburger {
+        display: flex;
+    }
 }
