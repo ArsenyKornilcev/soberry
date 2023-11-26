@@ -827,6 +827,7 @@ section.search p {
     .table__total {
         grid-template-columns: 94px 1fr;
         gap: 15px;
+        padding: 0 25px;
     }
 
     .table__rows {
@@ -849,5 +850,74 @@ section.search p {
     section.order,
     section.info {
         margin-top: 30px;
+    }
+}
+
+@media (max-width: 640px) {
+    .status__bar {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 20px;
+    }
+
+    .status__bar>div {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .status__bar .status__line {
+        padding: 10px 0;
+    }
+
+    .status__line>div {
+        flex-direction: column;
+    }
+
+    .status__line>div .line {
+        flex-direction: column;
+        height: 100%;
+        width: 1.2px;
+    }
+
+    .status__line span {
+        min-width: 20px;
+        min-height: 20px;
+        margin: 0;
+    }
+
+    .status__points_imgs img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .status__points_imgs {
+        gap: 30px;
+    }
+
+    .status__bar .status__points_titles {
+        padding: 10px 0;
+    }
+
+    .status__bar .status__points_titles .status__title {
+        transform: translateX(0%);
+    }
+
+    .item__img img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .table__row {
+        grid-template-columns: 75px 6fr 1fr 1fr;
+        gap: 10px;
+    }
+
+    .table__header .table__col_empty {
+        display: none;
+    }
+
+    .table__total {
+        grid-template-columns: 75px 1fr;
+        gap: 10px;
     }
 }
