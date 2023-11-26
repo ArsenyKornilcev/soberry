@@ -183,9 +183,7 @@ section>section {
     color: #000;
     font-family: Futura;
     font-size: 28px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 .section_text {
@@ -213,7 +211,7 @@ section.title p {
 }
 
 section.title {
-    padding-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 
@@ -245,12 +243,10 @@ section.search p {
 .search__form input {
     border-radius: 15px;
     background: #FFF;
-    padding: 14px 14px 15px 57px;
+    padding: 0px 14px 0px 57px;
     font-family: Arial;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     border: none;
     flex-grow: 1;
     outline: none;
@@ -260,9 +256,7 @@ section.search p {
     color: #BCBCBC;
     font-family: Arial;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 .search__form img {
@@ -270,11 +264,16 @@ section.search p {
     transform: translate(-50%, -50%);
     left: 26px;
     top: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+.search__form * {
+    height: 50px;
 }
 
 .search__form button {
     width: 200px;
-    padding: 14px 0 15px;
     text-align: center;
     border-radius: 15px;
     background: #6F58A1;
@@ -282,9 +281,7 @@ section.search p {
     color: #FFF;
     font-family: Arial;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 
@@ -303,9 +300,7 @@ section.search p {
     color: #000;
     font-family: Arial;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 .meta__col_type {
@@ -393,9 +388,7 @@ section.search p {
     color: #bcbcbc;
     font-family: Futura;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
 
 .status__title_active {
@@ -414,9 +407,7 @@ section.search p {
     color: #000;
     font-family: Arial;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
     display: flex;
     flex-direction: column;
 }
@@ -429,15 +420,19 @@ section.search p {
     display: grid;
     grid-template-columns: 2fr 6fr 1fr 1fr;
 }
+
 .table__header {
     padding: 14px 50px 13px;
 }
+
 .table__header .table__col:nth-child(2) {
     grid-column: 2;
 }
+
 .item__price {
     justify-content: flex-end;
 }
+
 .item__count {
     justify-content: center;
 }
@@ -459,23 +454,19 @@ section.search p {
     align-items: center;
 }
 
-.table__info_line {
-    width: 100%;
-    height: 1px;
-    background: #bcbcbc;
-    margin-bottom: 20px;
-}
-
 .table__info {
     display: flex;
     flex-flow: column nowrap;
     gap: 10px;
-    grid-column: 3/6;
+    grid-column: 2/5;
+    border-top: 1px solid #efefef;
+    padding-top: 20px;
 }
 
 .table__total {
     display: grid;
-    grid-template-columns: 50px 2fr 6fr 1fr 1fr 50px;
+    grid-template-columns: 2fr 6fr 1fr 1fr;
+    padding: 0 50px;
 }
 
 .table__info>div {
@@ -505,9 +496,7 @@ section.search p {
     color: #000;
     font-family: Arial;
     font-size: 20px;
-    font-style: normal;
     font-weight: 400;
-    line-height: normal;
 }
 
 .info .bold {
@@ -571,6 +560,7 @@ section.search p {
 
     .search__form button {
         font-size: 18px;
+        width: 25%;
     }
 
     .meta__col {
@@ -580,6 +570,135 @@ section.search p {
     .main>.container h3 {
         font-size: 26px;
     }
+
+    .details__table {
+        font-size: 18px;
+    }
+
+    .info__list span,
+    .total span {
+        font-size: 18px;
+    }
+
+    .status__points img {
+        max-width: 50px;
+    }
+
+    .status__points_imgs {
+        padding: 0 12px;
+    }
+
+    .status__line span {
+        width: 24px;
+        height: 24px;
+    }
 }
 
-@media (max-width: 768px) {}
+@media (max-width: 900px) {
+    .header__btn_track {
+        border-radius: 25px;
+    }
+    .header__btn_track span {
+        font-size: 14px;
+    }
+    .header__btns {
+        gap: 20px;
+    }
+    .status__title {
+        font-size: 16px;
+    }
+
+    .status__line span {
+        width: 18px;
+        height: 18px;
+    }
+
+    .status__points img {
+        max-width: 40px;
+    }
+
+    .search__form * {
+        font-size: 16px;
+        height: 45px;
+    }
+
+    section.title h1 {
+        margin-bottom: 10px;
+    }
+
+    section.title {
+        margin-bottom: 30px;
+        ;
+    }
+    section.search img {
+        height: 20px;
+        width: 20px;
+    }
+    .search__form input {
+        padding-left: 50px;
+    }
+
+    section.search,
+    section.order__meta,
+    section.order__status,
+    section.info {
+        padding: 30px;
+    }
+
+    section.order__details {
+        padding: 30px 0;
+    }
+
+    section.order__status h3 {
+        margin-bottom: 20px;
+    }
+
+    section.order__details h3 {
+        padding-left: 30px;
+        margin-bottom: 20px;
+    }
+
+    .main>.container h3 {
+        font-size: 22px;
+    }
+
+    .search__form {
+        gap: 15px;
+    }
+
+    .details__table {
+        font-size: 16px;
+    }
+    .table__rows {
+        padding: 20px 30px;
+    }
+    .table__row {
+        gap: 15px;
+    }
+
+    .info__list span,
+    .total span {
+        font-size: 16px;
+    }
+    .table__info, .info__list {
+        gap: 5px;
+    }
+    .table__info .total {
+        margin-top: 10px;
+    }
+    .table__total {
+        padding: 0 30px;
+        border-top: 1px solid #efefef;
+    }
+    .table__info {
+        border-top: none;
+    }
+    .table__header {
+        padding: 12px 30px 11px;
+    }
+    .info__list-item {
+        gap: 10px;
+    }
+}
+
+@media (max-width: 770px) {}
