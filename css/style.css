@@ -53,7 +53,7 @@ section>section {
 .header {
     background: #FFF;
     box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.10);
-    padding: 30px 40px;
+    padding: 30px 40px 28px;
 }
 
 .header__group {
@@ -428,7 +428,7 @@ section.search p {
     padding: 14px 50px 13px;
 }
 
-.table__header .table__col:nth-child(2) {
+.table__header .table__col:nth-child(1) {
     grid-column: 2;
 }
 
@@ -722,7 +722,7 @@ section.search p {
         height: 30px;
     }
 
-    .header__btn_track img {
+    .header__btn_track svg {
         width: 20px;
         height: 20px;
     }
@@ -737,6 +737,10 @@ section.search p {
 @media (max-width: 770px) {
     .header__logo img {
         width: 110px;
+    }
+
+    .header {
+        padding: 25px 40px 20px;
     }
 
     section.title h1 {
@@ -765,6 +769,10 @@ section.search p {
 
     section.order__status {
         padding: 30px 25px;
+    }
+
+    section.order__meta {
+        gap: 20px;
     }
 
     .search__form input,
@@ -846,6 +854,10 @@ section.search p {
         margin-top: 6px;
     }
 
+    .total span {
+        font-size: 14px;
+    }
+
     .main,
     section.order,
     section.info {
@@ -854,6 +866,49 @@ section.search p {
 }
 
 @media (max-width: 640px) {
+    .header .hamburger {
+        width: 50px;
+    }
+
+    .main>.container h3 {
+        font-size: 18px;
+    }
+
+    section.title h1 {
+        font-size: 28px;
+        margin-bottom: 3px;
+    }
+
+    section.title p {
+        font-size: 14px;
+    }
+
+    .meta__col {
+        font-size: 14px;
+    }
+
+    .header__logo img {
+        width: 100px;
+    }
+
+    .header__btn_track {
+        background: none;
+        padding: 0;
+    }
+
+    .header__btn_track span {
+        display: none;
+    }
+
+    .header__btn_track svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header__btn_track svg path {
+        stroke: #000;
+    }
+
     .status__bar {
         display: flex;
         flex-flow: row nowrap;
@@ -900,6 +955,7 @@ section.search p {
 
     .status__bar .status__points_titles .status__title {
         transform: translateX(0%);
+        font-size: 16px;
     }
 
     .item__img img {
@@ -907,9 +963,21 @@ section.search p {
         height: 75px;
     }
 
+    .details__table {
+        font-size: 14px;
+    }
+
     .table__row {
         grid-template-columns: 75px 6fr 1fr 1fr;
         gap: 10px;
+    }
+
+    .table__header .table__col:nth-child(1) {
+        grid-column: 1;
+    }
+
+    .table__header .table__col:nth-child(2) {
+        grid-column: 3;
     }
 
     .table__header .table__col_empty {
@@ -919,5 +987,16 @@ section.search p {
     .table__total {
         grid-template-columns: 75px 1fr;
         gap: 10px;
+    }
+
+    .info span {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 560px) {
+    .header .hamburger {
+        width: 40px;
+        gap: 12px;
     }
 }
