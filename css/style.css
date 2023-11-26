@@ -59,6 +59,7 @@ section>section {
 .header__group {
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
     gap: 20px;
 }
 
@@ -68,6 +69,7 @@ section>section {
     justify-content: center;
     gap: 15px;
     width: 60px;
+    height: 36px;
     cursor: pointer;
 }
 
@@ -144,12 +146,12 @@ section>section {
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
-    padding: 7px 11px;
+    padding: 0 11px;
     gap: 5px;
 }
 
 .header__btn_track span {
-    padding-top: 3px;
+    padding-top: 2px;
 }
 
 .header__btn_cart {
@@ -282,6 +284,7 @@ section.search p {
     font-family: Arial;
     font-size: 20px;
     font-weight: 700;
+    padding: 0;
 }
 
 
@@ -595,15 +598,14 @@ section.search p {
 }
 
 @media (max-width: 900px) {
-    .header__btn_track {
-        border-radius: 25px;
-    }
     .header__btn_track span {
         font-size: 14px;
     }
+
     .header__btns {
         gap: 20px;
     }
+
     .status__title {
         font-size: 16px;
     }
@@ -630,10 +632,12 @@ section.search p {
         margin-bottom: 30px;
         ;
     }
+
     section.search img {
         height: 20px;
         width: 20px;
     }
+
     .search__form input {
         padding-left: 50px;
     }
@@ -666,12 +670,18 @@ section.search p {
         gap: 15px;
     }
 
+    .search__form input::placeholder {
+        font-size: 18px;
+    }
+
     .details__table {
         font-size: 16px;
     }
+
     .table__rows {
         padding: 20px 30px;
     }
+
     .table__row {
         gap: 15px;
     }
@@ -680,25 +690,164 @@ section.search p {
     .total span {
         font-size: 16px;
     }
-    .table__info, .info__list {
+
+    .table__info,
+    .info__list {
         gap: 5px;
     }
+
     .table__info .total {
         margin-top: 10px;
     }
+
     .table__total {
         padding: 0 30px;
         border-top: 1px solid #efefef;
     }
+
     .table__info {
         border-top: none;
     }
+
     .table__header {
         padding: 12px 30px 11px;
     }
+
     .info__list-item {
         gap: 10px;
     }
+
+    .header__btn img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .header__btn_track img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .main,
+    section.order,
+    section.info {
+        margin-top: 40px;
+    }
 }
 
-@media (max-width: 770px) {}
+@media (max-width: 770px) {
+    .header__logo img {
+        width: 110px;
+    }
+
+    section.title h1 {
+        font-size: 36px;
+        margin-bottom: 5px;
+    }
+
+    section.title p {
+        font-size: 16px;
+    }
+
+    section.title {
+        margin-bottom: 25px;
+    }
+
+    section.search,
+    section.order__meta,
+    section.order__status,
+    section.info {
+        padding: 25px;
+    }
+
+    section.order__meta {
+        padding-bottom: 30px;
+    }
+
+    section.order__status {
+        padding: 30px 25px;
+    }
+
+    .search__form input,
+    .search__form input::placeholder {
+        font-size: 14px;
+    }
+
+    .search__form {
+        gap: 10px;
+    }
+
+    .search__form input,
+    .search__form button {
+        height: 40px;
+    }
+
+    .search__form button {
+        font-size: 14px;
+        width: 130px;
+    }
+
+    .meta__col {
+        font-size: 16px;
+    }
+
+    .main>.container h3 {
+        font-size: 20px;
+    }
+
+    .status__points img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .status__line span {
+        margin: 10px 0;
+    }
+
+    .status__title {
+        font-size: 14px;
+    }
+
+    .status__points_titles {
+        padding: 0 10px;
+    }
+
+    .order__details h3 {
+        padding-left: 25px;
+    }
+
+    .item__img img {
+        width: 94px;
+        height: 94px;
+    }
+
+    .table__row {
+        grid-template-columns: 94px 6fr 1fr 1fr;
+    }
+
+    .table__total {
+        grid-template-columns: 94px 1fr;
+        gap: 15px;
+    }
+
+    .table__rows {
+        padding: 20px 25px;
+    }
+
+    .table__header {
+        padding: 10px 25px;
+    }
+
+    .table__info {
+        gap: 2px;
+    }
+
+    .table__info .total {
+        margin-top: 6px;
+    }
+
+    .main,
+    section.order,
+    section.info {
+        margin-top: 30px;
+    }
+}
