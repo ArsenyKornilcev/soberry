@@ -1038,9 +1038,10 @@ section.search p {
     .table__row {
         gap: 10px;
     }
+
     section.order__meta {
         justify-content: space-between;
-        gap: 0;
+        gap: 5px;
     }
 }
 
@@ -1100,19 +1101,34 @@ section.search p {
     .details__table {
         font-size: 12px;
     }
+
     .total span {
         font-size: 12px;
     }
+
     section.order__details {
         padding: 20px 0;
     }
+
     section.info h3 {
         margin-bottom: 15px;
     }
+
     section.info span {
         font-size: 12px;
     }
+
     .table__info .total {
         margin-top: 4px;
+    }
+}
+
+@media (max-width:425px) {
+    .main > .container, .header > .container {
+        max-width: none;
+    }
+    .main, .header {
+        padding-left: 5vw;
+        padding-right: 5vw;
     }
 }
